@@ -394,7 +394,7 @@
             for (const key in data) {
                 formData.append(key, data[key]);
             }
-            console.log(formData)
+            console.log(formData.toString())
             const response = await fetch("https://script.google.com/macros/s/AKfycbwVgEWzrcyKsQ1HqDN1OsEEJ5813jFoqKSsGeS4xqqJMzbUr52vsK43DfbRoTkvIWwF/exec", {
                 method: "POST",
                 headers: {
