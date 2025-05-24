@@ -531,7 +531,7 @@
             try {
                 const result = await submitFormData(data);
 
-                if (result.status === "success") {
+                if (result === "Successfully Inserted" || result?.message === "Successfully Inserted") {
                 setTimeout(() => {
                     document.querySelector("form").style.display = "none";
                     document.getElementById("hello").style.display = "none";
