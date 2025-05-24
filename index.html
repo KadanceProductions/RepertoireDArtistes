@@ -430,7 +430,7 @@
             'reseaux',
             'liens',
             'parle'
-        ].map(key => data[key] || "")
+            ].map(key => key === 'tel' ? String(data[key] || "") : (data[key] || ""))
     ];
 
     const myHeaders = new Headers();
